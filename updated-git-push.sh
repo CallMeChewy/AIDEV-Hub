@@ -1,13 +1,23 @@
 #!/bin/bash
 # File: git-push-updates.sh
-# Path: AIDEV-Hub/Scripts/git-push-updates.sh
+# Path: AIDEV-Hub/git-push-updates.sh
 # Standard: AIDEV-PascalCase-1.6
 # Created: 2025-03-18
-# Last Modified: 2025-03-18  2:45PM
+# Last Modified: 2025-03-18  3:30PM
 # Description: Script to push updates to GitHub with formatted commit messages
 
-# Change to the project root directory
-cd "$(dirname "$0")/.." || exit 1
+# Stay in the current directory where the script is run from
+# (assuming we're already in the AIDEV-Hub directory)
+CURRENT_DIR=$(pwd)
+echo "==== AIDEV-Hub Git Update ===="
+echo "Current Directory: $CURRENT_DIR"
+echo ""
+
+# Check if this is a git repository
+if [ ! -d .git ]; then
+    echo "Error: Not a git repository. Make sure you're running this script from the AIDEV-Hub directory."
+    exit 1
+fi
 
 # Default description includes date and time in 12-hour format
 DEFAULT_DESC="Modifications $(date +"%m/%d/%y %I:%M%p")"
@@ -20,10 +30,6 @@ else
     # Custom description provided
     COMMIT_DESC="$*"
 fi
-
-echo "==== AIDEV-Hub Git Update ===="
-echo "Current Directory: $(pwd)"
-echo ""
 
 # Check if there are any changes to commit
 if git status --porcelain | grep -q .; then
