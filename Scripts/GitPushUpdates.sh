@@ -1,6 +1,6 @@
 #!/bin/bash
-# File: git-push-updates.sh
-# Path: AIDEV-Hub/git-push-updates.sh
+# File: GitPushUpdates.sh
+# Path: AIDEV-Hub/Scripts/GitPushUpdates.sh
 # Standard: AIDEV-PascalCase-1.6
 # Created: 2025-03-18
 # Last Modified: 2025-03-18  3:30PM

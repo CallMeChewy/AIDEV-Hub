@@ -1,0 +1,27 @@
+Include these boilerplate/foundational documents:
+
+1. **Core Framework Documents**:
+   - `AI-Human Collaborative Development Process Reference.md` - The foundational process document
+   - `AIDEV-PascalCase Standards.md` - The complete standards documentation
+   - `AUTHORSHIP.md` - Your authorship/attribution document
+
+2. **Current Implementation References**:
+   - `CodebaseSummary_[latest].txt` - Most recent codebase snapshot
+   - Any current database schema or structure documents
+
+3. **New Vision & Planning Documents**:
+   - `Project Himalaya: Vision Document.md`
+   - `Project Himalaya: Session Continuation Document.md`
+   - `Project Himalaya: Initial Files Structure.md`
+
+4. **Implementation Examples**:
+   - The AIdevLintingTest implementation files
+   - Knowledge Transfer Strategy document
+
+These documents provide a complete foundation that covers:
+- The fundamental principles and processes
+- Technical standards and requirements
+- Current implementation state
+- Future vision and structure
+
+Having this collection in your project knowledge base will enable any AI assistant (whether cloud-based like me or your local system) to understand both the theoretical framework and practical implementations of the project. This comprehensive context is especially important since we're repositioning Project Himalaya as the base framework with OllamaModelEditor as an implementation within it.

@@ -1,0 +1,114 @@
+Discovering tests in /home/herb/Desktop/AIDEV-Hub/Tests matching pattern 'test_*.py'...
+Starting tests at 2025-03-19 06:33:21PM
+
+======================================================================
+
+======================================================================
+Finished tests at 2025-03-19 06:33:21PM
+Elapsed time: 0.26 seconds
+
+Test Summary:
+  Ran 62 tests
+  Errors: 0
+  Failures: 12
+  Skipped: 0
+
+Failures and errors:
+
+FAILURE: test_update_merged_context (test_context_manager.TestContextManager.test_update_merged_context)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_context_manager.py", line 311, in test_update_merged_context
+    MockSetContext.assert_called_once()
+  File "/usr/lib/python3.12/unittest/mock.py", line 928, in assert_called_once
+    raise AssertionError(msg)
+AssertionError: Expected 'SetContext' to have been called once. Called 0 times.
+
+
+FAILURE: test_action_execution (test_state_manager.TestStateManager.test_action_execution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_state_manager.py", line 61, in setUp
+    self.assertIsNotNone(self.SessionId)
+AssertionError: unexpectedly None
+
+
+FAILURE: test_backup_state (test_state_manager.TestStateManager.test_backup_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_state_manager.py", line 61, in setUp
+    self.assertIsNotNone(self.SessionId)
+AssertionError: unexpectedly None
+
+
+FAILURE: test_configuration (test_state_manager.TestStateManager.test_configuration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_state_manager.py", line 61, in setUp
+    self.assertIsNotNone(self.SessionId)
+AssertionError: unexpectedly None
+
+
+FAILURE: test_continuity_document (test_state_manager.TestStateManager.test_continuity_document)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_state_manager.py", line 61, in setUp
+    self.assertIsNotNone(self.SessionId)
+AssertionError: unexpectedly None
+
+
+FAILURE: test_crash_resume_cycle (test_state_manager.TestStateManager.test_crash_resume_cycle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_state_manager.py", line 61, in setUp
+    self.assertIsNotNone(self.SessionId)
+AssertionError: unexpectedly None
+
+
+FAILURE: test_initialize_components (test_state_manager.TestStateManager.test_initialize_components)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_state_manager.py", line 61, in setUp
+    self.assertIsNotNone(self.SessionId)
+AssertionError: unexpectedly None
+
+
+FAILURE: test_integration_sequence (test_state_manager.TestStateManager.test_integration_sequence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_state_manager.py", line 61, in setUp
+    self.assertIsNotNone(self.SessionId)
+AssertionError: unexpectedly None
+
+
+FAILURE: test_session_lifecycle (test_state_manager.TestStateManager.test_session_lifecycle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_state_manager.py", line 61, in setUp
+    self.assertIsNotNone(self.SessionId)
+AssertionError: unexpectedly None
+
+
+FAILURE: test_validation (test_state_manager.TestStateManager.test_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_state_manager.py", line 61, in setUp
+    self.assertIsNotNone(self.SessionId)
+AssertionError: unexpectedly None
+
+
+FAILURE: test_export_import_rules (test_validation_manager.TestValidationManager.test_export_import_rules)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_validation_manager.py", line 560, in test_export_import_rules
+    self.assertTrue(IsValid)
+AssertionError: False is not true
+
+
+FAILURE: test_get_all_rules (test_validation_manager.TestValidationManager.test_get_all_rules)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/herb/Desktop/AIDEV-Hub/Tests/test_validation_manager.py", line 428, in test_get_all_rules
+    self.assertEqual(len(AllRules), len(Rules))
+AssertionError: 8 != 3
+
